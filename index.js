@@ -28,7 +28,7 @@ router.post('/postId', (req, res) => {
 });
 
 app.get('/', (req, res) => { //express 앱(app)을 넣고, root directory에 오면,
-    return controller.textApi(req,res);
+    controller.textApi(req,res);
 })
 
 app.listen(port, () => {
